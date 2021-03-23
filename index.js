@@ -5,5 +5,14 @@ $ (document).ready (function () {
         });
         $(".close").click (function () {
             $(".popup").fadeOut("slow");   
-            });    
+            });   
 });
+
+$(".contact").click (function () {
+    $(".popup").fadeIn("slow");
+    });
+    $(".close").click (function () {
+    $(".popup").fadeOut("slow");   
+    
+    });   
+    

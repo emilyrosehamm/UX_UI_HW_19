@@ -33,11 +33,11 @@
     padding-right: 53px;
 }
 .navbutton:hover {
-    border: 3px solid white;
+    border: 3px solid #F2A2B8;
 }
 
 .navbutton:active{
-    background-color: #F8F8F8;
+    background-color: #f2a2b8;
 
 }
 nav a:active{
@@ -98,6 +98,11 @@ nav a:active{
     padding-bottom: 131px;
 }
 
+.toolgallery {
+    max-width: 401px;
+    max-height: 510px;
+}
+
 .toolgallery p{
     color: #F8F8F8;
     font-family: 'Nunito', sans-serif;
@@ -112,6 +117,7 @@ nav a:active{
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+
 }
 
 .figma {
