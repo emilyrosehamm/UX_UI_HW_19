@@ -1,4 +1,4 @@
-
+/* FULL WEB PAGE */
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -12,9 +12,13 @@
     vertical-align: top;
     
 }
+/* HEADER, HERO, AND NAV */
 .logo {
     padding-left: 520px;
     padding-top: 24px;
+}
+.nav{
+    padding-top: 30px;
 }
 
 .navbutton {
@@ -26,11 +30,18 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 53px;
-    padding: 53px;
+    padding-right: 53px;
 }
-a {
-    color:#F8F8F8;
-    text-decoration: none;
+.navbutton:hover {
+    border: 3px solid white;
+}
+
+.navbutton:active{
+    background-color: #F8F8F8;
+
+}
+nav a:active{
+    color: #1C063B;
 }
 
 .headerhero {
@@ -53,6 +64,9 @@ a {
     padding-right: 100px; 
     align-content: center;
 }
+
+/* ABOUT ME SECTION */
+
 .aboutme {
     background-color: #1C063B;
     width: 1440px;
@@ -195,6 +209,9 @@ a {
     top: 1415px;
     padding-left: 421px;
 } 
+
+/* RECENT PROJECTS SECTION */
+
 .recentprojects{
     background-color: #1C063B;
     width: 1440px;
@@ -260,6 +277,9 @@ a {
     background-color: whitesmoke;
 
 }
+
+/* FONT */
+
 h1{
     color: #FFFFFF;
     font-family:  'Nunito', sans-serif;
@@ -295,9 +315,15 @@ p{
     font-weight: 400;
 }
 
+a {
+    color:#F8F8F8;
+    text-decoration: none;
+}
+
+/* BUTTONS */
+
 .button{
     display: inline-block;
-    background-color: #F8F8F8;
     padding: 15px;
     margin: 15px;
     width: 295px;
@@ -306,6 +332,7 @@ p{
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
+    border: none;
     
 }
 .roundbutton {
@@ -324,22 +351,49 @@ p{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 5%;
     margin-left: 20%;
-
 }
-.whiteactive {
+
+.contactmebutton {
     color: #1C063B;
+    background-color: #F8F8F8;
 
 }
-.purpleactive {
+
+.contactmebutton a {
+    color: #1C063B;
+}
+.downloadbutton {
     color: #F8F8F8;
     background-color: #1C063B;
 }
+
+/* FOOTER */
 
 footer {
     background-color: #1C063B;
     height: 450px;
     width: 1440px;
     top: 2584px;
+}
+
+.footerhands{
+    width: 1440px;
+    position: relative;
+    display: inline-block;
+
+}
+.footerhands .together {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footerhands:hover .together {
+    display: inline-block;
+}
+
+.footerhands:hover .apart {
+    display: none;
 }
 footer p {
     font-size: 12px;
@@ -366,6 +420,76 @@ footer p {
     align-items: right;
 }
 
+/* CONTACT MODAL*/
+
+.popup{
+    display: none;
+    position: absolute;
+    width: 1440px;
+    height: 3000px;
+    background-color:rgba(28, 6, 59, 0.8);
+
+
+}
+.contactme {
+    background-image: url(images/backgroundimage.png);
+    background-size: cover;
+    max-width: 1030px;
+    height: 651px;
+    display: flex;
+    margin-left: 205px;
+    margin-right: 205px;
+    margin-top: 155px;
+    align-items: center;
+    padding: 60px;
+    border-radius: 15px;
+    
+}
+.close {
+    position: absolute;
+    padding-left: 880px;
+}
+.contactme h3 {
+    color: #1C063B;
+}
+
+.contactme h2 {
+    color: #1C063B;
+}
+
+
+input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color:#4F4F4F;
+    font-size: 16px;
+}
+label{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: #1C063B;
+}
+#message{
+    height: 138px;
+    align-items: flex-start;
+}
+
+.sendimage{
+   justify-content: center;
+   align-items: center;
+}
+.popup .roundbutton {
+    margin: 0;
+    margin-left: 0;
+    margin-top: 30px;
+}
+/* MEDIA */
 @media (max-width: 600px){
 
     h1{
