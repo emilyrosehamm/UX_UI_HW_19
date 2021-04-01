@@ -58,11 +58,11 @@ nav a:active{
     float: left;
     padding-left: 100px;
 }
+
 .heroimage {
     float: right;
     padding-left: 10px;
     padding-right: 100px; 
-    align-content: center;
 }
 
 /* ABOUT ME SECTION */

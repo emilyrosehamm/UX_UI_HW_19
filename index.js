@@ -13,6 +13,12 @@ $(".contact").click (function () {
     });
     $(".close").click (function () {
     $(".popup").fadeOut("slow");   
-    
     });   
     
+    $(document).click(function(event) {
+        //if you click on anything except the modal itself or the "open modal" link, close the modal
+        if (!$(event.target).popup(".contact").length) {
+          $("body").find(".popup").removeClass("visible");
+        }
+      });
+      
